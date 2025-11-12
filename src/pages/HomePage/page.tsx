@@ -1,7 +1,9 @@
+import HeaderSection from "@/components/HomeComponents/Header/page"
+
 const HomePage = () => {
     return (
         <div>
-            <h1>HomePage</h1>
+            <HeaderSection />
         </div>
     )
 }
