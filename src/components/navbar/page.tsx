@@ -13,88 +13,109 @@ const Navbar = () => {
     {
       label: "Academics",
       children: [
-        { label: "Curriculum", href: "/academics/curriculum" },
-        { label: "Faculty", href: "/academics/faculty" },
+        { label: "Activities", href: "/academic-activities" },
+        { label: "Examination Details", href: "/examination-details" },
+        { label: "Calender", href: "/academic-calender" },
+        { label: "Rules & Regulations", href: "/academic-rules" },
       ],
     },
     {
       label: "About Us",
       children: [
-        { label: "Our Story", href: "/about/story" },
-        { label: "Vision & Mission", href: "/about/vision" },
+        { label: "Head Master's Desk", href: "/headmaster" },
+        { label: "Mission & Vision ", href: "/mission" },
+        { label: "Proposed Manifesto ", href: "/manifesto" },
       ],
     },
     {
       label: "Admissions",
       children: [
-        { label: "Process", href: "/admissions/process" },
-        { label: "Apply Now", href: "/admissions/apply" },
+        { label: "Admission Procedure", href: "/admission-procedure" },
+        { label: "Fees Structure", href: "/fees" },
       ],
     },
     {
       label: "Notice Board",
-      children: [
-        { label: "Announcements", href: "/notices/announcements" },
-        { label: "Events", href: "/notices/events" },
-      ],
+      // children: [
+      //   { label: "Process", href: "/admissions/process" },
+      //   { label: "Apply Now", href: "/admissions/apply" },
+      // ],
     },
     {
       label: "Contact Us",
       children: [
-        { label: "Reach Us", href: "/contact" },
-        { label: "Support", href: "/contact/support" },
+        { label: "Importent Phone Numbers", href: "/phone" },
       ],
     },
     {
       label: "School",
       children: [
-        { label: "Clubs", href: "/school/clubs" },
-        { label: "Activities", href: "/school/activities" },
+        { label: "Uniforms", href: "/uniforms" },
+        { label: "Infastructure", href: "/infastructure" },
+        { label: "Parents", href: "/parents" },
+        { label: "Students", href: "/students" },
+        { label: "Our Teachers", href: "/teachers" },
+        { label: "Children Rights", href: "/children-rights" },
       ],
     },
     {
       label: "Infrastructure",
       children: [
-        { label: "Library", href: "/infra/library" },
-        { label: "Sports", href: "/infra/sports" },
+        { label: "School Van", href: "/van" },
       ],
     },
   ];
 
   return (
     <header className="sticky top-0 z-50 bg-gradient-to-r from-[#a40d2e] to-[#c0392b] text-white shadow-lg">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4">
+      <nav className="mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-6">
         {/* Logo + Brand */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 flex-shrink-0">
           <Image
-            src="https://paragonmission.com/wp-content/uploads/elementor/thumbs/logo-png-e1738351757322-r0txn251w98uk2aq8aa76s0m43d801buseil26isbq.png" // replace with your logo path
-            alt="Logo"
-            width={40}
-            height={40}
-            className="rounded-full"
+            src="https://paragonmission.com/wp-content/uploads/elementor/thumbs/logo-png-e1738351757322-r0txn251w98uk2aq8aa76s0m43d801buseil26isbq.png"
+            alt="Paragon Mission Logo"
+            width={48}
+            height={48}
+            className="rounded-full border-2 border-white/30"
           />
-          <span className="font-bold text-lg tracking-wide uppercase text-yellow-300">
-            Paragon Mission
-          </span>
+          <Link href={"/"} className="font-bold text-sm md:text-xl tracking-wider uppercase  sm:block">
+            Paragon <br className="md:block hidden" /> Mission
+          </Link>
         </div>
 
-        {/* Desktop Nav */}
-        <ul className="hidden md:flex items-center space-x-6">
+        {/* Desktop Navigation - Visible from md (768px) upwards */}
+        <ul className="hidden md:flex justify-end items-center gap-3 lg:gap-5 xl:gap-6 flex-wrap">
           {navItems.map((item) =>
             item.children ? (
               <li key={item.label} className="relative group">
                 <button
-                  className="flex items-center gap-1 text-sm font-medium hover:text-yellow-300 transition-colors px-2 py-1 rounded cursor-pointer"
+                  className="relative flex items-center cursor-pointer gap-1 text-sm lg:text-base font-semibold hover:text-yellow-300 transition-colors px-2 py-2 rounded-md whitespace-nowrap after:absolute after:left-0 after:bottom-0 after:h-[3px] after:bg-yellow-300 after:w-0 after:transition-all after:duration-300 hover:after:w-full"
+
+                  onMouseEnter={() => setOpenDropdown(item.label)}
+                  onMouseLeave={() => setOpenDropdown(null)}
                 >
                   {item.label}
-                  <ChevronDown size={14} />
+                  <ChevronDown
+                    size={14}
+                    className={`transition-transform duration-200 ${openDropdown === item.label ? "rotate-180" : ""
+                      }`}
+                  />
                 </button>
-                <div className="absolute left-0 mt-2 bg-[#a40d2e] text-white rounded-md shadow-xl w-48 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-                  {item.children.map((sub, index) => (
+
+                {/* Dropdown */}
+                <div
+                  className={`absolute left-1/2 -translate-x-1/2 top-full mt-2 w-48 bg-[#a40d2e] rounded-lg shadow-2xl border border-white/10 overflow-hidden transition-all duration-300 ${openDropdown === item.label
+                    ? "opacity-100 visible translate-y-0"
+                    : "opacity-0 invisible -translate-y-2"
+                    }`}
+                  onMouseEnter={() => setOpenDropdown(item.label)}
+                  onMouseLeave={() => setOpenDropdown(null)}
+                >
+                  {item.children.map((sub) => (
                     <Link
                       key={sub.label}
                       href={sub.href}
-                      className="block px-4 py-2 text-sm hover:text-yellow-300 border-b border-gray-700 last:border-b-0"
+                      className="block px-5 py-3 text-sm hover:bg-[#c0392b]/40 hover:text-yellow-300 transition-colors"
                     >
                       {sub.label}
                     </Link>
@@ -104,8 +125,10 @@ const Navbar = () => {
             ) : (
               <li key={item.label}>
                 <Link
-                  href={item.href}
-                  className="text-sm font-medium hover:text-yellow-300 transition-colors px-2 py-1 rounded"
+                  href={item.href || "#"}
+                  className="relative text-sm lg:text-base font-semibold hover:text-yellow-300 transition-colors px-2 py-2 rounded-md whitespace-nowrap block
+after:absolute after:left-0 after:bottom-0 after:h-[3px] after:bg-yellow-300 after:w-0 after:transition-all after:duration-300 hover:after:w-full"
+
                 >
                   {item.label}
                 </Link>
@@ -114,61 +137,70 @@ const Navbar = () => {
           )}
         </ul>
 
-        {/* Mobile Button */}
+        {/* Mobile Menu Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-white hover:text-yellow-300 transition-colors p-2 rounded"
+          className="md:hidden text-white hover:text-yellow-300 transition-colors p-2"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
         >
-          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+          {menuOpen ? <X size={32} /> : <Menu size={32} />}
         </button>
       </nav>
 
       {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="md:hidden bg-[#a40d2e] text-white px-4 pb-4 space-y-3 animate-slideDown">
+      <div
+        className={`md:hidden bg-[#a40d2e] text-white w-full absolute left-0 top-full shadow-2xl overflow-hidden transition-all duration-500 ease-in-out ${menuOpen ? "opacity-100" : "max-h-0 opacity-0"
+          }`}
+      >
+        <ul className="py-4 px-6 space-y-1">
           {navItems.map((item) =>
             item.children ? (
-              <div key={item.label}>
+              <li key={item.label}>
                 <button
                   onClick={() =>
                     setOpenDropdown(openDropdown === item.label ? null : item.label)
                   }
-                  className="flex items-center justify-between w-full py-2 text-sm font-medium hover:text-yellow-300"
+                  className="w-full flex items-center justify-between py-3 text-lg font-medium hover:text-yellow-300 transition-colors"
                 >
                   {item.label}
                   <ChevronDown
-                    size={16}
-                    className={`transform transition  ${
-                      openDropdown === item.label ? "rotate-180" : ""
-                    }`}
+                    size={20}
+                    className={`transition-transform ${openDropdown === item.label ? "rotate-180" : ""
+                      }`}
                   />
                 </button>
                 {openDropdown === item.label && (
-                  <div className="pl-4 space-y-2 mt-2 transition-all duration-300 ease-in-out">
+                  <div className="pl-6 mt-1 space-y-2 border-l-2 border-yellow-300/40">
                     {item.children.map((sub) => (
                       <Link
                         key={sub.label}
                         href={sub.href}
-                        className="block text-sm text-gray-200 hover:text-yellow-300 py-1"
+                        onClick={() => {
+                          setMenuOpen(false);
+                          setOpenDropdown(null);
+                        }}
+                        className="block py-2 text-gray-200 hover:text-yellow-300 transition-colors"
                       >
                         {sub.label}
                       </Link>
                     ))}
                   </div>
                 )}
-              </div>
+              </li>
             ) : (
-              <Link
-                key={item.label}
-                href={item.href}
-                className="block py-2 text-sm font-medium hover:text-yellow-300"
-              >
-                {item.label}
-              </Link>
+              <li key={item.label}>
+                <Link
+                  href={item.href || "#"}
+                  onClick={() => setMenuOpen(false)}
+                  className="block py-3 text-lg font-medium hover:text-yellow-300 transition-colors"
+                >
+                  {item.label}
+                </Link>
+              </li>
             )
           )}
-        </div>
-      )}
+        </ul>
+      </div>
     </header>
   );
 };
