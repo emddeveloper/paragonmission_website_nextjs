@@ -66,7 +66,7 @@ export default function AdmissionProcedure() {
                         <li className="flex gap-3">
                             <span className="mt-2 h-2 w-2 rounded-full bg-red-600 flex-shrink-0" />
                             <p>
-                                নতুন ছাত্রছাত্রীদের জন্য <strong>ADMISSION FORM</strong> এবং <strong>STUDENT'S DATA CAPTURE FORMAT</strong> পূরণ করা বাধ্যতামূলক।
+                                নতুন ছাত্রছাত্রীদের জন্য <strong>ADMISSION FORM</strong> এবং <strong>STUDENT DATA CAPTURE FORMAT</strong> পূরণ করা বাধ্যতামূলক।
                             </p>
                         </li>
 
