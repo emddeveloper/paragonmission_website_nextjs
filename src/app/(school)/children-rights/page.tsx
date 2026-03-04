@@ -43,7 +43,7 @@ export default function ChildrenRights() {
 
                 <h2 className="mb-10 text-center text-2xl font-extrabold tracking-wide text-red-700 sm:text-3xl md:text-4xl">
                     <span className="lg:border-b-4 border-red-600 pb-2 underline lg:no-underline">
-                        Children's Rights
+                        Children Rights
                     </span>
 
                     <span className="block pt-2 text-2xl sm:text-3xl md:text-4xl font-semibold mt-5 text-red-700 underline">
