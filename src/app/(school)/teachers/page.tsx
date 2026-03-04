@@ -42,7 +42,7 @@ export default function Teachers() {
                 {/* Teachers Responsibility */}
                 <div className="text-center mb-10">
                     <h1 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-red-700 underline">
-                        TEACHER'S RESPONSIBILITY (শ্রেণী শিক্ষিকা /শিক্ষকের দায়িত্ব )
+                        TEACHER RESPONSIBILITY (শ্রেণী শিক্ষিকা /শিক্ষকের দায়িত্ব )
                     </h1>
 
 
