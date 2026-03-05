@@ -72,7 +72,7 @@ const Navbar = () => {
         {/* Logo + Brand */}
         <div className="flex items-center gap-3 flex-shrink-0">
           <Image
-            src="https://paragonmission.com/wp-content/uploads/elementor/thumbs/logo-png-e1738351757322-r0txn251w98uk2aq8aa76s0m43d801buseil26isbq.png"
+            src="/logo-png-e1738351757322-r0txn251w98uk2aq8aa76s0m43d801buseil26isbq.png"
             alt="Paragon Mission Logo"
             width={48}
             height={48}

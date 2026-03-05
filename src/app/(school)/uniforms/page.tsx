@@ -10,7 +10,7 @@ export default function Uniforms() {
 
                 <div className="mx-auto mb-10 max-w-xl overflow-hidden rounded-3xl shadow-2xl">
                           <Image
-                            src="https://paragonmission.com/wp-content/uploads/2025/01/IMG-20240808-WA0042-300x237.jpg" // replace image
+                            src="/IMG-20240808-WA0042-300x237.jpg" // replace image
                             alt="School Holidays"
                             width={1200}
                             height={700}

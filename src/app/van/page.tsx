@@ -11,7 +11,7 @@ export default function Van() {
         <div className="mb-10 flex justify-center">
           <div className="relative w-full max-w-3xl h-[220px] sm:h-[300px] rounded-3xl overflow-hidden shadow-lg">
             <Image
-              src="https://paragonmission.com/wp-content/uploads/2025/02/mahindra-supro-school-van.avif" // replace with your image
+              src="/mahindra-supro-school-van.avif" // replace with your image
               alt="School Transport"
               fill
               className="object-cover"

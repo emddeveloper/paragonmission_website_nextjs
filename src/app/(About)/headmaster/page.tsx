@@ -8,7 +8,7 @@ export default function HeadMaster() {
             <div className="mx-auto max-w-6xl">
                 <div className="relative mx-auto mb-12 max-w-3xl overflow-hidden rounded-3xl shadow-2xl">
                     <Image
-                        src="https://paragonmission.com/wp-content/uploads/elementor/thumbs/20211112_133040-r0nyp0e7200urhvdgzgxiab4iq2erm5u84oza5dmm0.jpg"
+                        src="/20211112_133040-r0nyp0e7200urhvdgzgxiab4iq2erm5u84oza5dmm0.jpg"
                         alt="Academic Activity"
                         width={1200}
                         height={700}

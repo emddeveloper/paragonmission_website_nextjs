@@ -30,7 +30,7 @@ export default function ChildrenRights() {
                 {/* Image */}
                 <div className="mx-auto mb-12 max-w-xl overflow-hidden rounded-3xl shadow-2xl">
                     <Image
-                        src="https://paragonmission.com/wp-content/uploads/2025/02/childrens-rights-1.png"
+                        src="/childrens-rights-1.png"
                         alt="School Building"
                         width={1400}
                         height={800}

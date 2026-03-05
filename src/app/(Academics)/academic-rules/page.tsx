@@ -10,7 +10,7 @@ export default function AcademicRules() {
             <div className="mx-auto max-w-6xl">
                 <div className="relative mx-auto mb-12 max-w-3xl overflow-hidden rounded-3xl shadow-2xl">
                     <Image
-                        src="https://paragonmission.com/wp-content/uploads/elementor/thumbs/s3-1-r0tdpky4mynma83m9nyqso3zfike2tcbgqaeyzwou0.jpg"
+                        src="/s3-1-r0tdpky4mynma83m9nyqso3zfike2tcbgqaeyzwou0.jpg"
                         alt="Academic Activity"
                         width={1200}
                         height={700}

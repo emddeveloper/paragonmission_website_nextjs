@@ -11,7 +11,7 @@ const Footer = () => {
             {/* Logo & Title */}
             <div className="flex items-center gap-4">
               <Image
-                src="https://paragonmission.com/wp-content/uploads/elementor/thumbs/logo-png-e1738351757322-r0txn252orgj3rlnlkugk89jsd3s4of2m2hy23bzcg.png" 
+                src="/logo-png-e1738351757322-r0txn252orgj3rlnlkugk89jsd3s4of2m2hy23bzcg.png" 
                 alt="Paragon Mission Logo"
                 width={80}
                 height={80}

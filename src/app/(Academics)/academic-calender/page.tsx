@@ -38,7 +38,7 @@ export default function AcademicCalender() {
         {/* Image */}
         <div className="mx-auto mb-10 max-w-3xl overflow-hidden rounded-3xl shadow-2xl">
           <Image
-            src="https://paragonmission.com/wp-content/uploads/2025/01/s6-768x373.jpg" // replace image
+            src="/2025/01/s6-768x373.jpg" // replace image
             alt="School Holidays"
             width={1200}
             height={700}

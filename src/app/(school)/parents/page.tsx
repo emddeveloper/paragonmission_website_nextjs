@@ -20,7 +20,7 @@ export default function Parents() {
                 {/* Image */}
                 <div className="mx-auto mb-12 max-w-xl overflow-hidden rounded-3xl shadow-2xl">
                     <Image
-                        src="https://paragonmission.com/wp-content/uploads/2025/02/parents-768x512.jpg"
+                        src="/parents-768x512.jpg"
                         alt="School Building"
                         width={1400}
                         height={800}

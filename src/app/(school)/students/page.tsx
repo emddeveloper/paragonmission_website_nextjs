@@ -24,7 +24,7 @@ export default function Students() {
                 {/* Image */}
                 <div className="mx-auto mb-12 max-w-xl overflow-hidden rounded-3xl shadow-2xl">
                     <Image
-                        src="https://paragonmission.com/wp-content/uploads/elementor/thumbs/s3-1-r0tdpky4mynma83m9nyqso3zfike2tcbgqaeyzwou0.jpg" // replace with your image
+                        src="/s3-1-r0tdpky4mynma83m9nyqso3zfike2tcbgqaeyzwou0.jpg" // replace with your image
                         alt="School Building"
                         width={1400}
                         height={800}

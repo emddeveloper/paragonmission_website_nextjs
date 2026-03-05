@@ -31,7 +31,7 @@ export default function Teachers() {
                 <div className="flex justify-center mb-8">
                     <div className="relative w-full max-w-3xl h-[200px] sm:h-[260px] rounded-2xl overflow-hidden shadow-md">
                         <Image
-                            src="https://paragonmission.com/wp-content/uploads/elementor/thumbs/20211112_133040-r0nyp0e7200urhvdgzgxiab4iq2erm5u84oza5dmm0.jpg"
+                            src="/20211112_133040-r0nyp0e7200urhvdgzgxiab4iq2erm5u84oza5dmm0.jpg"
                             alt="Teachers Responsibility"
                             fill
                             className="object-cover"

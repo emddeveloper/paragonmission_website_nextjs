@@ -11,7 +11,7 @@ export default function ExaminationDetails() {
         {/* Top Image */}
         <div className="mx-auto mb-12 max-w-xl overflow-hidden rounded-3xl shadow-2xl">
           <Image
-            src="https://paragonmission.com/wp-content/uploads/2025/01/Screenshot_20221116-212022_Google.jpg" 
+            src="/2025/01/Screenshot_20221116-212022_Google.jpg" 
             alt="Examinations"
             width={1200}
             height={700}

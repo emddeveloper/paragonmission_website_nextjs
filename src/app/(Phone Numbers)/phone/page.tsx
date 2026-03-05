@@ -19,7 +19,7 @@ export default function Phone() {
         <div className="mb-10">
           <div className="relative w-full h-[220px] sm:h-[280px] rounded-3xl overflow-hidden shadow-md">
             <Image
-              src="https://paragonmission.com/wp-content/uploads/elementor/thumbs/s3-1-r0tdpky4mynma83m9nyqso3zfike2tcbgqaeyzwou0.jpg"
+              src="/s3-1-r0tdpky4mynma83m9nyqso3zfike2tcbgqaeyzwou0.jpg"
               alt="School Group"
               fill
               className="object-cover"

@@ -14,25 +14,25 @@ import "../../../app/globals.css"
 const slides = [
   {
     id: 1,
-    image: "https://paragonmission.com/wp-content/uploads/2025/01/IMG-20240808-WA0042.jpg",
+    image: "/IMG-20240808-WA0042.jpg",
     title: "Welcome to Paragon Mission School",
     subtitle: "Shaping Future Leaders Since 2005",
   },
   {
     id: 2,
-    image: "https://paragonmission.com/wp-content/uploads/2025/01/20211112_133040-1024x694.jpg",
+    image: "/20211112_133040-1024x694.jpg",
     title: "Excellence in Education",
     subtitle: "A Legacy of Academic Brilliance",
   },
   {
     id: 3,
-    image: "https://paragonmission.com/wp-content/uploads/elementor/thumbs/s5-e1738060074110-r0o237erv2ybxfws76e43vga2qtmcnl99salucjy70.jpg",
+    image: "/s5-e1738060074110-r0o237erv2ybxfws76e43vga2qtmcnl99salucjy70.jpg",
     title: "Holistic Development",
     subtitle: "Nurturing Minds, Building Character",
   },
   {
     id: 4,
-    image: "https://paragonmission.com/wp-content/uploads/elementor/thumbs/Screenshot_20241212-205532_Facebook-r0nyqcbxvupdemd4n2nt163scxgxi2kz3wllvcmz3s.jpg",
+    image: "/Screenshot_20241212-205532_Facebook-r0nyqcbxvupdemd4n2nt163scxgxi2kz3wllvcmz3s.jpg",
     title: "State-of-the-Art Campus",
     subtitle: "Where Learning Meets Innovation",
   },
@@ -116,7 +116,7 @@ function HeaderSection() {
       <div className="grid md:grid-cols-3 text-center">
         <div className="bg-yellow-400 p-6 flex flex-col items-center justify-center">
           <Image
-            src="https://paragonmission.com/wp-content/uploads/2025/01/IMG-20240808-WA0042.jpg"
+            src="/IMG-20240808-WA0042.jpg"
             alt="Students"
             width={80}
             height={60}
@@ -128,7 +128,7 @@ function HeaderSection() {
 
         <div className="bg-pink-500 text-white p-6 flex flex-col items-center justify-center">
           <Image
-            src="https://paragonmission.com/wp-content/uploads/2025/01/20211112_133040-1024x694.jpg"
+            src="/20211112_133040-1024x694.jpg"
             alt="Teachers"
             width={80}
             height={60}
@@ -140,7 +140,7 @@ function HeaderSection() {
 
         <div className="bg-blue-600 text-white p-6 flex flex-col items-center justify-center">
           <Image
-            src="https://paragonmission.com/wp-content/uploads/elementor/thumbs/s5-e1738060074110-r0o237erv2ybxfws76e43vga2qtmcnl99salucjy70.jpg"
+            src="/s5-e1738060074110-r0o237erv2ybxfws76e43vga2qtmcnl99salucjy70.jpg"
             alt="Classes"
             width={80}
             height={60}

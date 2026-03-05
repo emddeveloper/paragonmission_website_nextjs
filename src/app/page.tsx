@@ -118,7 +118,7 @@ export default function Home() {
               {/* Image */}
               <div className="relative h-44 w-full overflow-hidden">
                 <img
-                  src="https://paragonmission.com/wp-content/uploads/2025/01/s3-1-300x146.jpg"
+                  src="/2025/01/s3-1-300x146.jpg"
                   alt="Notice"
                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
@@ -154,7 +154,7 @@ export default function Home() {
               {/* Image */}
               <div className="relative h-44 w-full overflow-hidden">
                 <img
-                  src="https://paragonmission.com/wp-content/uploads/2025/01/Screenshot_20241212-205447_Facebook-300x169.jpg"
+                  src="/2025/01/Screenshot_20241212-205447_Facebook-300x169.jpg"
                   alt="Notice"
                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
@@ -190,7 +190,7 @@ export default function Home() {
               {/* Image */}
               <div className="relative h-44 w-full overflow-hidden">
                 <img
-                  src="https://paragonmission.com/wp-content/uploads/2025/01/s1-300x146.jpg"
+                  src="/2025/01/s1-300x146.jpg"
                   alt="Notice"
                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
@@ -244,7 +244,7 @@ export default function Home() {
               <div className="flex justify-center md:justify-start">
                 <div className="h-28 w-28 overflow-hidden rounded-2xl ring-4 ring-blue-100">
                   <img
-                    src="https://paragonmission.com/wp-content/uploads/elementor/thumbs/s6-r0oda30g5nft2iunb8audwczf6y07wekl5jgx830s0.jpg"
+                    src="/s6-r0oda30g5nft2iunb8audwczf6y07wekl5jgx830s0.jpg"
                     alt="Alumni"
                     className="h-full w-full object-cover"
                   />

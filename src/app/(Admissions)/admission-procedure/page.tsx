@@ -12,7 +12,7 @@ export default function AdmissionProcedure() {
                 <div className="flex justify-center mb-10">
                     <div className="relative w-full max-w-md rounded-2xl overflow-hidden shadow-lg">
                         <Image
-                            src="https://paragonmission.com/wp-content/uploads/2025/01/IMG-20240808-WA0042-300x237.jpg"
+                            src="/IMG-20240808-WA0042-300x237.jpg"
                             alt="Students in School Uniform"
                             width={500}
                             height={350}

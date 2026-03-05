@@ -26,7 +26,7 @@ export default function Manifesto() {
                 {/* Image */}
                 <div className="mx-auto mb-12 max-w-xl overflow-hidden rounded-3xl shadow-2xl">
                     <Image
-                        src="https://paragonmission.com/wp-content/uploads/elementor/thumbs/20240627_121637copy2-01-r0nyp29vfo3fepsn60a6n9u1pht570dawdzy8pau9k.jpeg" // replace with your image
+                        src="/20240627_121637copy2-01-r0nyp29vfo3fepsn60a6n9u1pht570dawdzy8pau9k.jpeg" // replace with your image
                         alt="School Building"
                         width={1400}
                         height={800}

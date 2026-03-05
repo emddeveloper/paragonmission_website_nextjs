@@ -10,7 +10,7 @@ export default function Fees() {
                 {/* Image */}
                 <div className="relative w-full h-[220px] md:h-[320px] rounded-xl overflow-hidden mb-6">
                     <Image
-                        src="https://paragonmission.com/wp-content/uploads/2025/01/20240627_121637copy2-01-768x415.jpeg"
+                        src="/20240627_121637copy2-01-768x415.jpeg"
                         alt="School Building"
                         fill
                         className="object-cover"
