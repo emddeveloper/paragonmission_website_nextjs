@@ -104,7 +104,7 @@ const Footer = () => {
       {/* Copyright */}
       <div className="bg-black text-gray-400 text-center text-sm py-4">
         © {new Date().getFullYear()} Paragon Mission ~ Website Designed & Maintained by{" "}
-        <span className="text-blue-400 font-medium">emd.developer</span>. All
+        <span className="text-blue-400 font-medium"><a href="https://saypinfotech.com" target="_blank" rel="noopener noreferrer">SAYP INFOTECH</a></span>. All
         rights reserved.
       </div>
     </footer>
