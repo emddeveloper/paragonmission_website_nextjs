@@ -14,27 +14,39 @@ import "../../../app/globals.css"
 const slides = [
   {
     id: 1,
-    image: "/IMG-20240808-WA0042.jpg",
-    title: "Welcome to Paragon Mission School",
-    subtitle: "Shaping Future Leaders Since 2005",
+    image: "/banner_2026.jpg",
+    title: "",
+    subtitle: "",
   },
   {
     id: 2,
-    image: "/20211112_133040-1024x694.jpg",
-    title: "Excellence in Education",
-    subtitle: "A Legacy of Academic Brilliance",
+    image: "/class_2.jpg",
+    title: "",
+    subtitle: "",
   },
   {
     id: 3,
-    image: "/s5-e1738060074110-r0o237erv2ybxfws76e43vga2qtmcnl99salucjy70.jpg",
-    title: "Holistic Development",
-    subtitle: "Nurturing Minds, Building Character",
+    image: "/school_1.jpeg",
+    title: "",
+    subtitle: "",
   },
   {
     id: 4,
-    image: "/Screenshot_20241212-205532_Facebook-r0nyqcbxvupdemd4n2nt163scxgxi2kz3wllvcmz3s.jpg",
-    title: "State-of-the-Art Campus",
-    subtitle: "Where Learning Meets Innovation",
+    image: "/prize3.jpg",
+    title: "",
+    subtitle: "",
+  },
+  {
+    id: 5,
+    image: "/eca_1.jpg",
+    title: "",
+    subtitle: "",
+  },
+  {
+    id: 6,
+    image: "/rabindra1.jpg",
+    title: "",
+    subtitle: "",
   },
 ];
 
@@ -80,7 +92,7 @@ function HeaderSection() {
                 />
 
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" /> */}
 
                 {/* Content Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center text-center px-6">
@@ -116,7 +128,7 @@ function HeaderSection() {
       <div className="grid md:grid-cols-3 text-center">
         <div className="bg-yellow-400 p-6 flex flex-col items-center justify-center">
           <Image
-            src="/IMG-20240808-WA0042.jpg"
+            src={slides[4].image}
             alt="Students"
             width={80}
             height={60}
@@ -128,7 +140,7 @@ function HeaderSection() {
 
         <div className="bg-pink-500 text-white p-6 flex flex-col items-center justify-center">
           <Image
-            src="/20211112_133040-1024x694.jpg"
+            src={slides[2].image}
             alt="Teachers"
             width={80}
             height={60}
@@ -140,7 +152,7 @@ function HeaderSection() {
 
         <div className="bg-blue-600 text-white p-6 flex flex-col items-center justify-center">
           <Image
-            src="/s5-e1738060074110-r0o237erv2ybxfws76e43vga2qtmcnl99salucjy70.jpg"
+            src={slides[0].image}
             alt="Classes"
             width={80}
             height={60}
